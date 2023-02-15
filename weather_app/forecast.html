@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7f6187871b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="searchBar">
+            <a href="/"><i class="fa-solid fa-house"></i>Home</a>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h4>Search for country</h4>
+            <select name="countries" id="countries1" aria-placeholder="Search for a Country"></select>
+            <form >
+                <input type="search" name="city" placeholder="Enter any City" id="citysearch1">
+                <button type="submit" id="submit1">Search</button>
+            </form>
+        </div>
+        
+    </div>
+    <div class="imgContainer">
+        <img src="bg3.gif" alt="Backgroung Image"  class="bgimg">
+    </div>
+    <h1 style="position: absolute; top: 15vh; left: 40vw; ">Weather of <span id="city1">Delhi</span>,<span id="country1">India</span></h1>
+    <div class="nextDays">
+        <div id="day1" class="data">
+            <i class="fa-solid fa-cloud"></i>
+            
+            <h1><span id="date1"></span></h1>
+            <h5>Max Temp is<span id="temp1">25degree</span>&#8451</h5>
+            <h5>Min Temp is<span id="temp2">25degree</span>&#8451</h5>
+        </div>
+        <div id="day2" class="data">
+            <i class="fa-solid fa-cloud"></i>
+            <h1><span id="date2"></span></h1>
+            <h5>Max Temp is<span id="temp3">25degree</span>&#8451</h5>
+            <h5>Min Temp is<span id="temp4">25degree</span>&#8451</h5>
+        </div>
+        <div id="day3" class="data">
+            <i class="fa-solid fa-cloud"></i>
+            <h1><span id="date3"></span></h1>
+            <h5>Max Temp is<span id="temp5">25degree</span>&#8451</h5>
+            <h5>Min Temp is<span id="temp6">25degree</span>&#8451</h5>
+        </div>
+        <div id="day4" class="data">
+            <i class="fa-solid fa-cloud"></i>
+            <h1><span id="date4"></span></h1>
+            <h5>Max Temp is<span id="temp7">25degree</span>&#8451</h5>
+            <h5>Min Temp is<span id="temp8">25degree</span>&#8451</h5>
+        </div>
+        <div id="day5" class="data">
+            <i class="fa-solid fa-cloud"></i>
+            <h1><span id="date5"></span></h1>
+            <h5>Max Temp is<span id="temp9">25degree</span>&#8451</h5>
+            <h5>Min Temp is<span id="temp10">25degree</span>&#8451</h5>
+        </div>
+    </div>
+    
+    <script src="forecast.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(164, 245, 245);
+    /*overflow-x: hidden;*/
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 70vw;
+    margin: auto;
+    position: absolute;
+    color: antiquewhite;
+    
+    top: 5vh;
+    left: 3vw;
+    text-align: center;
+    
+    background-color: black;
+    border-radius: 12px;
+}
+.searchBar{
+    display: flex;
+    justify-content: center;
+    margin: 4px 4px;
+    padding: 4px 4px;
+}
+.fa-magnifying-glass{
+    margin-left: 4vw;
+}
+.searchBar h4{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+#countries{
+    margin-right: 1vw;
+    
+}
+.searchBar a{
+    text-decoration: none;
+    
+}
+.dateContainer:hover{
+   
+    border: 2px solid black ;
+    background-color: rgb(62, 62, 62);
+    color: white;
+    border-radius: 10px;
+}
+.dateContainer{
+    text-shadow: 2px 2px 2px black;
+    position: absolute;
+    top: 4vh;
+    left: 75vw ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+    font-weight: bold;
+    height: 15vh;
+    background-color: transparent;
+    color: black;
+}
+.imgContainer img{
+    height: 100vh;
+    width: 100vw;
+    /*animation: rotate linear 45s infinite;*/
+}
+@keyframes rotate{
+    100%{
+        transform: translate(-540vw);
+    }
+}
+.box{
+    background-image: url('img2.jpg');
+    background-size: cover;
+    text-align: center;
+    
+    height: 45vh;
+    width: 36vw;
+    margin: auto;
+    position: absolute;
+    top: 25vh;
+    left: 34vw;
+    border-radius: 10px;
+    opacity: 0.9;
+    color: rgb(218, 23, 179);
+    font-size: 2vw;
+    
+}
+.box1{
+    height: 25vh;
+    width: 36vw;
+    margin: auto;
+    position: absolute;
+    top: 65vh;
+    font-size: 1.5vw;
+    left: 34vw;
+}
+.box h1{
+    text-shadow: 2px 2px 2px rgb(5, 12, 32);
+}
+.left{
+    position: absolute;
+    top: 30vh;
+    left: 4vw;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.right{
+    position: absolute;
+    top: 25vh;
+    left: 78vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.item1{
+    margin: 7px 7px;
+    
+    border-radius: 12px;
+    padding: 6px;
+    background-color: rgb(62, 62, 62);
+    color: white;
+    width: 12vw;
+}
+.item1 a{
+    text-decoration: none;
+    color: white;
+}
+.item1:hover{
+    
+    color: blue;
+    background-color: inherit;
+    border: 2px solid black;
+}
+
+.forecast{
+    color: rgb(203, 196, 196);
+    font-size: 3.5vh;
+}
+.footer{
+    position: absolute;
+    bottom: 9vh;
+    left: 38vw;
+    font-size: 3vh;
+}
+#btn{
+    padding: 1vw;
+    font-size: 3vh;
+    background-color: blue;
+    border-radius: 4vw;
+}
+#btn a{
+    text-decoration: none;
+    color: white;
+    
+}
+#btn:hover{
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 4vw;
+}
+.nextDays{
+    position: absolute;
+    top: 28vh;
+    
+    display: flex;
+    
+}
+.data{
+    
+    width: 15vw;
+    height: 30vh;
+    background-color: rgb(108, 69, 69);
+    border-radius: 2vw;
+    opacity: 0.9;
+    margin: 2vw 2vw;
+    text-align: center;
+    font-size: 1.5vw;
+    
+}
+.data:hover{
+    background-color: transparent;
+}
+.header {
+    position: absolute;
+    top: 3vh;
+    left: 40vw;
+    text-align: center;
+}
+@media  screen and (max-width: 1080px) {
+    .footer{
+        left: 25vw;
+    }
+    .fa-magnifying-glass{
+        margin-left: 0.5vw;
+    }
+    .searchBar h4{
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    }
+    #countries1{
+        margin-right: 0.5vw;
+        
+    }
+}
+@media screen and (max-width:990px){
+    .fa-magnifying-glass{
+        margin-left: 0;
+    }
+    .searchBar h4{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #countries1{
+        margin-right: 0;
+        
+    }
+    .left{
+        top: 14vh;
+    }
+    .right{
+        top: 17vh;
+        left: 70vw;
+    }
+}

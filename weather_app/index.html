@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7f6187871b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="searchBar">
+            <a href="/"><i class="fa-solid fa-house"></i>Home</a>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h4>Search for country</h4>
+            <select name="countries" id="countries" aria-placeholder="Search for a Country"></select>
+            <form >
+                <input type="search" name="city" placeholder="Enter any City" id="citysearch">
+                <button type="submit" id="submit">Search</button>
+            </form>
+        </div>
+        
+    </div>
+    <div class="dateContainer">
+        
+        <div class="date" id="date">
+           <span id="date6"></span>
+        </div>
+        <div class="tz-id">TimeZone ID: <span id="tz-id"></span></div>
+    </div>
+    <div class="imgContainer">
+        <img src="rain.gif" alt="Backgroung Image"  class="bgimg">
+    </div>
+    <div class="main">
+        <div class="box">
+            <h2>Weather of <span id="city">Delhi</span>,<span id="country">India</span></h2>
+            
+            <h4 style="background-color: grey; color: black;">Temp is <span id="temp_c"></span>&#8451</h4>
+            <div class="forecast">
+                <div class="hourlyData">
+                    <h3><i class="fa-solid fa-moon"></i>At 00:00 AM <span id="temp_c2">17degree</span>&#8451</h3>
+                </div>
+                <div class="hourlyData">
+                    <h3><i class="fa-solid fa-moon"></i>At 04:00 AM <span id="temp_c3">15.5degree</span>&#8451</h3>
+                </div>
+                <div class="hourlyData">
+                    <h3><i class="fa-regular fa-sun"></i>At 08:00 AM <span id="temp_c4">17.3degree</span>&#8451</h3>
+                </div>
+                <div class="hourlyData">
+                    <h3><i class="fa-regular fa-sun"></i>At 12:00 PM <span id="temp_c5">27.9degree</span>&#8451</h3>
+                </div>
+                <div class="hourlyData">
+                    <h3><i class="fa-regular fa-sun"></i>At 16:00 PM <span id="temp_c6">29.1degree</span>&#8451</h3>
+                </div>
+                <div class="hourlyData">
+                    <h3><i class="fa-solid fa-moon"></i>At 20:00 PM <span id="temp_c7">23.1degree</span>&#8451</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="left">
+        
+            
+        <div class="item1"><a href="/ppt.html"><i class="fa-sharp fa-regular fa-snowflake"></i>Precipitation <span id="precip_in"></span> inch</a></div>
+        <div class="item1"><a href="/"><i class="fa-brands fa-wpressr"></i>Pressure <span id="press"></span></a></div>
+        
+        <div class="item1"><a href="/"><i class="fa-solid fa-wind"></i> Wind Speed <span id="wind_speed"></span></a></div>
+        <div class="item1"><a href="/"> <i class="fa-solid fa-wind"></i>Wind degree <span id="wind_degree"></span></a></div>
+        <div class="item1"><a href="/"><i class="fa-solid fa-wind"></i> Wind direction <span id="wind_direc"></span></a></div>
+        <div class="item1"><a href="/"><i class="fa-solid fa-temperature-high"></i> Feels like temp <span id="feels_like"></span></a>&#8451</div>
+        <div class="item1"><a href="/"><i class="fa-regular fa-eye"></i>Visibility <span id="vis"></span> </a></div>
+        <div class="item1"><a href="/"><i class="fa-solid fa-droplet"></i> Humidity <span id="humid"></span></a></div>
+    </div>
+    <div class="right">
+        <div class="item1"><a href="/"><i class="fa-regular fa-sun"></i> Sunrise At <span id="sunrise"></span></a></div>
+        <div class="item1"><a href="/"><i class="fa-solid fa-mountain-sun"></i> Sunset At <span id="sunset"></span></a></div>
+        <div class="item1"><a href="/"><i class="fa-solid fa-moon"></i> Moonrise At <span id="moonrise"></span></a></div>
+        <div class="item1"><a href="/"><i class="fa-solid fa-moon"></i> Moonset At <span id="moonset"></span></a></div>
+        <div class="item1"><a href="/"><i class="fa-solid fa-cloud"></i>Cloud PCT <span id="cloud_pct"></span></a></div>
+        <div class="item1"><a href="/"><i class="fa-solid fa-water"></i>Gust Speed <span id="gust"></span></a></div>
+        <div class="item1"><a href="/"><i class="fa-solid fa-temperature-high"></i> Minimum Temp is <span id="min_temp"></span></a>&#8451</div>
+        <div class="item1"><a href="/"><i class="fa-solid fa-temperature-high"></i> Maximum Temp is <span id="max_temp"></span></a>&#8451</div>
+    </div>
+    <div class="footer">
+        <button id="btn"><a href="/forecast.html">To know next five days forecast,Tap here! :)</a></button>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
